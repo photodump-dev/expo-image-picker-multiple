@@ -25,6 +25,7 @@
   "homepage": "https://github.com/MonstroDev/expo-image-picker-multiple#readme",
   "dependencies": {
     "expo-screen-orientation": "^3.0.0"
+    "expo-media-library": "~13.0.3"
   },
   "peerDependencies": {
     "react-native": "*"
