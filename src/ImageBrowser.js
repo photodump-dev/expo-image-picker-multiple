@@ -62,7 +62,7 @@ export default class ImageBrowser extends React.Component {
   getNumColumns = orientation => {
     const {PORTRAIT_UP, PORTRAIT_DOWN} = ScreenOrientation.Orientation;
     const isPortrait = orientation === PORTRAIT_UP || orientation === PORTRAIT_DOWN;
-    return isPortrait ? 4 : 7;
+    return isPortrait ? 3 : 7;
   }
 
   selectImage = (index) => {
