@@ -17,10 +17,11 @@ class ImageTile extends React.PureComponent {
         style={{ opacity: selected ? 0.5 : 1 }}
         underlayColor='transparent'
         onPress={() => selectImage(index)} >
-        <View style={{ position: 'relative' }}>
-          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <View style={{ position: 'relative', margin: 3}}>
+          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <ImageBackground
-              style={{ width: width / 4, height: width / 4 }}
+              style={{ width: width / 3.7, height: width / 3.7,}}
+              imageStyle={{borderRadius: 4  }}
               source={{ uri: item.uri }} >
               {selected && renderSelectedComponent && renderSelectedComponent(selectedItemNumber)}
               {renderExtraComponent && renderExtraComponent(item)}
