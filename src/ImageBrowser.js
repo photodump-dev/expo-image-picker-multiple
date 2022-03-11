@@ -35,7 +35,9 @@ export default class ImageBrowser extends React.Component {
   }
 
   async componentDidMount() {
-    await this.getPermissionsAsync();
+    setInterval(() => {
+  await this.getPermissionsAsync();
+}, 1000);
     ScreenOrientation.addOrientationChangeListener(this.onOrientationChange);
     const orientation = await ScreenOrientation.getOrientationAsync();
     const numColumns = this.getNumColumns(orientation);
